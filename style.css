@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css");  /*Icones do place holder*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body{
+    background-color: #e2ce1a;
+}
+.container{
+    width: 944px;
+    height: 555px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 30% 70%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+.texto1{
+    background-color: #36320a;
+    border-radius: 16px 0px 0px 16px;
+}
+.texto2{
+    background-color: #fefaa1;
+    border-radius: 0px 16px 16px 0px;
+}
+/* Primeiro container texto1 */
+.texto1texto{
+    margin: 40% 10% 50% 10%;
+    color: white;
+}
+.texto1texto img{
+    height: auto;
+    width: auto;
+    display: block;
+}
+.texto1texto h3{
+    font-size: 26px;
+    margin: 5px 0px;
+}
+.texto1texto p{
+    font-size: 23px;
+    margin: 0px 10px 0px 10px;
+}
+.texto1texto button{
+    margin-top: 100px;
+    background: none; 
+    border: 4px solid white; 
+    border-radius: 50px;
+    color: inherit; 
+    padding: 10px 70px; 
+    cursor: pointer; 
+    font-size: 23px; 
+    font-weight: 700;
+}
+#senha{
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+/* Segundo container texto2 */
+.texto2texto{
+    margin: 10%;
+    text-align: center;
+}
+.texto2texto h2{
+    font-size: 36px;
+    font-weight: 800;
+    margin: 5px;
+}
+.texto2texto p{
+    margin: 0px auto 20px auto;
+    font-size: 19px;
+}
+.texto2texto input{
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 23px;
+    background-color: #E2CE1A;
+}
+.texto2texto input[type=text] {
+    font-size: 23px;
+}
+.texto2texto input[type=text]::placeholder{
+    font-family: "Poppins", sans-serif,'FontAwesome';
+    font-size: 23px;
+    font-weight: 700;
+    padding: 23px 0px;
+    color: #00000099;
+}
+.texto2texto button{
+    background: #36320a; 
+    color: #fff;
+    border: none; 
+    border-radius: 50px;
+    padding: 15px 80px; 
+    margin-top: 50px;
+    cursor: pointer; 
+    font-size: 23px; 
+    font-weight: 700;
+}
+@media only screen and (max-width: 954px) {
+    body{
+        margin: 0px !important;
+    }
+    .container{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        grid-template-columns: 100%;
+        position: static;
+        -ms-transform:none;
+        transform:none;
+    }
+    .texto1{
+        border-radius: 0px;
+    }
+    .texto2{
+        background-color: #fefaa1;
+        border-radius: 0px;
+    }
+    .texto1texto{
+        margin: 10%;
+    }
+    .texto1texto img{
+        margin: 0 auto 10px auto;
+    }
+    .texto1{
+        justify-content: center;
+    }
+    .texto1texto button{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .texto2texto input{
+        width: 80%;
+    }
+    .texto2texto button{
+        margin-top: 50px;
+        width: 100%;
+    }
+}
